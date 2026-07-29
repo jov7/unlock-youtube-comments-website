@@ -1,12 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unlock YouTube Comments</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Read and post comments on YouTube videos where comments are disabled.">
+  <meta name="theme-color" content="#0f1115">
+  <title>Unlock YouTube Comments</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Unlock YouTube Comments</h1>
-    <p>Website coming soon.</p>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Unlock YouTube Comments home">
+      <span class="brand-mark" aria-hidden="true">▶</span>
+      <span>Unlock YouTube Comments</span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="#features">Features</a>
+      <a href="#how-it-works">How it works</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Chrome extension</p>
+        <h1>Join the conversation when YouTube comments are disabled.</h1>
+        <p class="hero-text">Read, post, reply to, and interact with comments through an independent community-powered comment section directly below the video.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="https://chromewebstore.google.com/detail/unlock-youtube-comments/bilcacfngalbbfaamjhaeiminbjamjpi" target="_blank" rel="noopener noreferrer">Add to Chrome</a>
+          <a class="button secondary" href="#how-it-works">See how it works</a>
+        </div>
+        <p class="small-note">Works on YouTube videos where the built-in comment section is unavailable.</p>
+      </div>
+      <div class="hero-visual">
+        <img src="images/hero.png" alt="Unlock YouTube Comments promotional preview showing comments turned on">
+      </div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="section-heading">
+        <p class="eyebrow">Features</p>
+        <h2>Everything you need for an independent discussion.</h2>
+      </div>
+      <div class="feature-grid">
+        <article class="card"><h3>Read and post comments</h3><p>Start or join a discussion on videos where YouTube comments are disabled.</p></article>
+        <article class="card"><h3>Replies and threads</h3><p>Reply to specific users and follow conversations in a clear threaded layout.</p></article>
+        <article class="card"><h3>Edit and delete</h3><p>Stay in control of your own comments by editing or removing them.</p></article>
+        <article class="card"><h3>Likes and dislikes</h3><p>React to comments and help useful contributions become easier to find.</p></article>
+        <article class="card"><h3>Notifications</h3><p>See when someone replies to you or interacts with your comments.</p></article>
+        <article class="card"><h3>Google sign-in</h3><p>Secure sign-in helps protect accounts, reduce spam, and support notifications.</p></article>
+      </div>
+    </section>
+
+    <section class="section split" id="how-it-works">
+      <div>
+        <p class="eyebrow">How it works</p>
+        <h2>Install once. Use it directly on YouTube.</h2>
+        <p>The extension adds its own comment section below eligible YouTube videos. These are independent comments and are not part of YouTube's native comment system.</p>
+      </div>
+      <ol class="steps">
+        <li><span>1</span><div><strong>Install the extension</strong><p>Add it from the Chrome Web Store.</p></div></li>
+        <li><span>2</span><div><strong>Open a YouTube video</strong><p>Visit a video where comments are disabled.</p></div></li>
+        <li><span>3</span><div><strong>Join the discussion</strong><p>Read comments, post your own, and reply to others.</p></div></li>
+      </ol>
+    </section>
+
+    <section class="section faq">
+      <div class="section-heading"><p class="eyebrow">FAQ</p><h2>Good to know.</h2></div>
+      <details><summary>Are these original YouTube comments?</summary><p>No. The extension provides an independent comment system for videos where YouTube's built-in comments are disabled.</p></details>
+      <details><summary>Why is Google sign-in used?</summary><p>Google sign-in is used to support secure accounts, comment ownership, spam prevention, and notifications. Your Google password is not shared with the extension.</p></details>
+      <details><summary>Does the extension change the video?</summary><p>No. It adds a separate interface below the video page and does not alter the video itself.</p></details>
+    </section>
+
+    <section class="cta">
+      <div><p class="eyebrow">Start commenting</p><h2>Bring discussion back to videos with disabled comments.</h2></div>
+      <a class="button primary" href="https://chromewebstore.google.com/detail/unlock-youtube-comments/bilcacfngalbbfaamjhaeiminbjamjpi" target="_blank" rel="noopener noreferrer">Add to Chrome</a>
+    </section>
+  </main>
+
+  <footer>
+    <span>© <span id="year"></span> Unlock YouTube Comments</span>
+    <div><a href="privacy.html">Privacy Policy</a><a href="https://chromewebstore.google.com/detail/unlock-youtube-comments/bilcacfngalbbfaamjhaeiminbjamjpi" target="_blank" rel="noopener noreferrer">Chrome Web Store</a></div>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
