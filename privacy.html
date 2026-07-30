@@ -30,7 +30,7 @@
   <main>
     <p class="eyebrow">Legal</p>
     <h1>Privacy Policy</h1>
-    <p class="hero-text">Last updated: June 29, 2026</p>
+    <p class="hero-text">Last updated: July 30, 2026</p>
     <div class="privacy-content">
 
     <p>
@@ -49,15 +49,35 @@
     <ul>
         <li>
             <strong>Identity Information:</strong>
-            When you log in via Google OAuth2, we collect your Google user ID,
-            name, and profile picture. We do not collect or store your email
-            address on our servers, nor do we access your Google account password.
+            When you log in via Google OAuth2, our servers briefly receive your
+            Google user ID, name, email address, and profile picture from Google
+            to verify your identity on each request. We do not access your Google
+            account password. Our database only permanently stores your Google
+            user ID and profile picture — we do not write your email address or
+            full name to our database.
+        </li>
+
+        <li>
+            <strong>Generated Nickname:</strong>
+            The display name shown on your comments is not your email address —
+            it is a nickname automatically generated from the part of your email
+            before the "@" symbol (for example, "@johndoe" from "johndoe@example.com").
+            This nickname is derived on our server from your verified email on
+            each request and is stored and displayed publicly alongside your comments.
         </li>
 
         <li>
             <strong>App Data:</strong>
-            We store comments, replies, and notification states that you actively
-            create within our custom comment section.
+            We store comments, replies, likes/dislikes, and notification states
+            that you actively create within our custom comment section.
+        </li>
+
+        <li>
+            <strong>IP Address:</strong>
+            We temporarily process your IP address to enforce rate limits (e.g.
+            limiting how many comments can be posted per minute) and prevent
+            spam and abuse. IP addresses are not written to our database and are
+            not used for tracking or advertising.
         </li>
     </ul>
 
@@ -66,12 +86,26 @@
     <p>We use the collected data strictly to:</p>
 
     <ul>
-        <li>Authenticate your identity so you can post comments under a unique name and profile picture.</li>
+        <li>Authenticate your identity so you can post comments under a unique nickname and profile picture.</li>
         <li>Deliver real-time notifications inside the extension popup when another user replies to your comment.</li>
         <li>Render the custom comment threads on YouTube video pages.</li>
+        <li>Prevent spam and abuse (e.g. rate-limiting comment submissions by IP address and account).</li>
     </ul>
 
-    <h2>3. Permissions and Justifications</h2>
+    <h2>3. Local Storage on Your Device</h2>
+
+    <p>
+        After you log in, the extension stores your Google user ID, name, email
+        address, profile picture URL, and a temporary Google OAuth access token
+        in your browser's local storage on youtube.com pages. This is used to
+        keep you signed in and to authenticate requests to our backend without
+        requiring you to log in again on every page. This information stays in
+        your browser's local storage until you log out, until the access token
+        expires, or until you clear your browser data. It is stored only on
+        your device and is not part of our server-side database.
+    </p>
+
+    <h2>4. Permissions and Justifications</h2>
 
     <p>
         Our extension requires the following Chrome permissions to function:
@@ -89,23 +123,28 @@
         <li><strong>Host Permissions (youtube.com):</strong> Ensures the extension runs only on official YouTube watch pages.</li>
     </ul>
 
-    <h2>4. Data Sharing and Disclosure</h2>
+    <h2>5. Data Sharing and Disclosure</h2>
 
     <p>
         We do not sell, trade, or rent your personal data to third parties.
         Your data is never used for tracking, advertising, or creditworthiness
-        assessments.
+        assessments. Your Google email and profile data pass through Google's
+        own servers to verify your identity but are not shared with any other
+        third party.
     </p>
 
-    <h2>5. Data Security</h2>
+    <h2>6. Data Security</h2>
 
     <p>
         We implement standard security measures on our hosting platform
         (Render/MongoDB) to protect your data from unauthorized access,
-        alteration, or disclosure.
+        alteration, or disclosure. Because your access token and profile
+        information are stored in your browser's local storage (see Section 3),
+        we recommend keeping your browser and extensions up to date and logging
+        out on shared devices.
     </p>
 
-    <h2>6. Changes to This Policy</h2>
+    <h2>7. Changes to This Policy</h2>
 
     <p>
         We may update our Privacy Policy from time to time.
@@ -113,12 +152,11 @@
         <strong>"Last updated"</strong> date.
     </p>
 
-    <h2>7. Contact Us</h2>
+    <h2>8. Contact Us</h2>
 
     <p>
-        If you have any questions about this Privacy Policy,
-        you can contact us through our official extension support
-        channel on the Chrome Web Store.
+        If you have any questions about this Privacy Policy, you can reach us
+        through our <a href="contact.html">contact page</a>.
     </p>
 
 </div>
